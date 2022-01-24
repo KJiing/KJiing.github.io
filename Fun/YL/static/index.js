@@ -341,10 +341,10 @@ function shareText(score) {
         return '倒计时多了' + ((deviation_time / 1000) - 20).toFixed(2) + "s";
     }
     SubmitResults();
-    if (score <= 39) return '你TM真菜，晏蕾还有这么多';
-    if (score <= 79) return '晏蕾少了不少了';
-    if (score <= 139) return '晏蕾快要灭绝了';
-    if (score <= 199) return 'No 晏蕾 now';
+    if (score <= 39) return '晏蕾还有好多！！';
+    if (score <= 79) return '晏蕾惨遭人踩！！';
+    if (score <= 139) return '晏蕾快要灭绝了！！';
+    if (score <= 199) return '传下去，晏蕾已经无了';
     return '人？';
 }
 
