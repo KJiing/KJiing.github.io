@@ -142,8 +142,14 @@ body {
 
 .t1,
 .t2,
-.t3,
-.t4,
+.t3{
+    background-size: auto 100%;
+    background-image: url(./image/2.jpg);
+}
+.t4{
+    background-size: auto 100%;
+    background-image: url(./image/1.png);
+}
 .t5 {
     background-size: auto 100%;
     background-image: url(./image/ClickBefore.png);
