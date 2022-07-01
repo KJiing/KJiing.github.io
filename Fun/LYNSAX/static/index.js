@@ -205,7 +205,7 @@ function refreshGameLayer(box, loop, offset) {
                 cell: i % 4,
                 id: r.id
             });
-            r.className += ' t' + (Math.floor(Math.random() * 1000) %4 + 1);
+            r.className += ' t' + (Math.floor(Math.random() * 1000) % 5 + 1);
             r.notEmpty = true;
             i = (Math.floor(j / 4) + 1) * 4 + Math.floor(Math.random() * 1000) % 4;
         } else {
@@ -341,11 +341,11 @@ function shareText(score) {
         return '倒计时多了' + ((deviation_time / 1000) - 20).toFixed(2) + "s";
     }
     SubmitResults();
-    if (score <= 29) return '哈哈哈哈分好低！';
-    if (score <= 49) return '打自己的脸好狠';
-    if (score <= 79) return '你是对自己有什么仇吗？';
-    if (score <= 109) return '好我鼓掌！！';
-    return '这手速，你对自己仇真大！！';
+    if (score <= 39) return '你剩下了很多美扬！！';
+    if (score <= 79) return '踩了很多美扬了！！';
+    if (score <= 139) return '美扬已经无处遁逃！！';
+    if (score <= 199) return '厉害，你真是赶尽杀绝！！';
+    return '这手速，你还是个人？';
 }
 
 function toStr(obj) {
