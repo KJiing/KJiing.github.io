@@ -205,7 +205,7 @@ function refreshGameLayer(box, loop, offset) {
                 cell: i % 4,
                 id: r.id
             });
-            r.className += ' t' + (Math.floor(Math.random() * 1000) % 5 + 1);
+            r.className += ' t' + (Math.floor(Math.random() * 1000) % 8 + 1);
             r.notEmpty = true;
             i = (Math.floor(j / 4) + 1) * 4 + Math.floor(Math.random() * 1000) % 4;
         } else {
@@ -341,11 +341,11 @@ function shareText(score) {
         return '倒计时多了' + ((deviation_time / 1000) - 20).toFixed(2) + "s";
     }
     SubmitResults();
-    if (score <= 39) return '你剩下了很多美扬！！';
-    if (score <= 79) return '踩了很多美扬了！！';
-    if (score <= 139) return '美扬已经无处遁逃！！';
-    if (score <= 199) return '厉害，你真是赶尽杀绝！！';
-    return '这手速，你还是个人？';
+    if (score <= 29) return '手速好慢啊！！';
+    if (score <= 49) return 'A馨已逃脱！';
+    if (score <= 99) return '为什么要这么狠的点A馨的脸？？';
+    if (score <= 149) return '厉害，你真是赶尽杀绝！！';
+    return '这手速，仇真大！！';
 }
 
 function toStr(obj) {

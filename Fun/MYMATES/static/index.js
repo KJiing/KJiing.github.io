@@ -341,11 +341,11 @@ function shareText(score) {
         return '倒计时多了' + ((deviation_time / 1000) - 20).toFixed(2) + "s";
     }
     SubmitResults();
-    if (score <= 29) return '对自己的脸不够狠啊！！';
-    if (score <= 49) return '你和同学吵架了？？';
-    if (score <= 99) return '你对别人脸这么大仇！！';
+    if (score <= 29) return '手速好慢啊！！';
+    if (score <= 49) return 'A馨已逃脱！';
+    if (score <= 99) return '为什么要这么狠的点A馨的脸？？';
     if (score <= 149) return '厉害，你真是赶尽杀绝！！';
-    return '这手速，你对她们脸仇真大！！';
+    return '这手速，仇真大！！';
 }
 
 function toStr(obj) {
