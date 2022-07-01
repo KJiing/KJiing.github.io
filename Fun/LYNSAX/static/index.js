@@ -205,7 +205,7 @@ function refreshGameLayer(box, loop, offset) {
                 cell: i % 4,
                 id: r.id
             });
-            r.className += ' t' + (Math.floor(Math.random() * 1000) % 8 + 1);
+            r.className += ' t' + (Math.floor(Math.random() * 1000) %4 + 1);
             r.notEmpty = true;
             i = (Math.floor(j / 4) + 1) * 4 + Math.floor(Math.random() * 1000) % 4;
         } else {
