@@ -342,8 +342,8 @@ function shareText(score) {
     }
     SubmitResults();
     if (score <= 29) return '手速好慢啊！！';
-    if (score <= 49) return 'A馨已逃脱！';
-    if (score <= 99) return '为什么要这么狠的点A馨的脸？？';
+    if (score <= 49) return '阿馨已逃脱！';
+    if (score <= 99) return '为什么要这么狠的点阿馨的脸？？';
     if (score <= 149) return '厉害，你真是赶尽杀绝！！';
     return '这手速，仇真大！！';
 }
